@@ -12,13 +12,13 @@ const app = () => {
     //get the length of the outline
     const outlineLength = outline.getTotalLength();
     // console.log(outlineLength);
-    
+
     //duration
-    let fakeDuration = 1200;
+    let fakeDuration = 180;
 
     outline.style.strokeDasharray = outlineLength;
     outline.style.strokeDashoffset = outlineLength;
-    
+
     //pick different sounds
     sounds.forEach(sound =>{
         sound.addEventListener('click', function(){
@@ -30,7 +30,7 @@ const app = () => {
 
 // play sound
     play.addEventListener('click', () =>{
-        // song.play();        
+        // song.play();
         checkPlaying(song);
     });
 // select sound
